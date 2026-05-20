@@ -1,0 +1,17 @@
+<svg width="800" height="520" viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bikeBody" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1dd1a1" offset="0%" />
+      <stop stop-color="#54a0ff" offset="100%" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" rx="48" fill="#f4fffb" />
+  <circle cx="220" cy="340" r="78" fill="#c6f6d5" />
+  <circle cx="580" cy="340" r="78" fill="#c6f6d5" />
+  <circle cx="220" cy="340" r="42" fill="#0f545b" />
+  <circle cx="580" cy="340" r="42" fill="#0f545b" />
+  <path d="M240 340 L360 240 L500 260 L560 340" fill="none" stroke="url(#bikeBody)" stroke-width="24" stroke-linecap="round" />
+  <path d="M360 240 L430 180" fill="none" stroke="url(#bikeBody)" stroke-width="24" stroke-linecap="round" />
+  <path d="M500 260 L460 190" fill="none" stroke="url(#bikeBody)" stroke-width="24" stroke-linecap="round" />
+  <path d="M120 360 H700" fill="none" stroke="#1b3a4f" stroke-width="20" stroke-linecap="round" opacity="0.2" />
+</svg>

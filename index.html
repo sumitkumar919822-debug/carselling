@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sell Your Ride</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="landingPage" class="landing-page">
+    <div class="landing-panel">
+      <div class="landing-copy">
+        <span class="eyebrow">Launch your ride marketplace</span>
+        <h1>Sell and buy cars, bikes, and cycles with a colorful modern experience.</h1>
+        <p>SellerCar is a dynamic vehicle marketplace for buyers and sellers. Manage listings, filter categories, add new rides, and checkout in one polished app.</p>
+        <div class="landing-actions">
+          <button id="getStartedBtn" class="btn btn-primary">Get Started</button>
+          <button id="learnMoreBtn" class="btn btn-secondary">Learn More</button>
+        </div>
+      </div>
+      <div class="landing-visual">
+        <img src="assets/images/hero-bg.svg" alt="Marketplace illustration" />
+      </div>
+    </div>
+
+    <section class="summary-grid">
+      <article class="summary-card">
+        <h2>20+</h2>
+        <p>Curated Listings</p>
+      </article>
+      <article class="summary-card">
+        <h2>3</h2>
+        <p>Categories Included</p>
+      </article>
+      <article class="summary-card">
+        <h2>Live Cart</h2>
+        <p>Instant preview and checkout</p>
+      </article>
+      <article class="summary-card">
+        <h2>Responsive</h2>
+        <p>Works on every screen</p>
+      </article>
+    </section>
+
+    <section class="feature-grid" id="featureSection">
+      <article class="feature-card">
+        <h3>Smart filtering</h3>
+        <p>Search by category, brand, or description to find the right ride fast.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Colorful listings</h3>
+        <p>Image-supported cards and polished product layouts make browsing a pleasure.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Easy seller tools</h3>
+        <p>Add your own car, bike, or cycle instantly with a clean listing form.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Secure cart</h3>
+        <p>Track items and total price with a modern cart sidebar and purchase flow.</p>
+      </article>
+    </section>
+  </div>
+
+  <div id="appContainer" class="hidden">
+    <header class="site-header">
+      <div class="brand">
+        <h1>Sell Your Ride</h1>
+        <p>Cars, Bikes & Cycles marketplace</p>
+      </div>
+      <div class="header-actions">
+        <button id="showAddFormBtn" class="btn btn-secondary">Add Listing</button>
+        <button id="toggleCartBtn" class="btn btn-primary">Cart <span id="cartCount">0</span></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="controls" id="catalogAnchor">
+        <div class="filter-group">
+          <label for="categoryFilter">Filter by category</label>
+          <select id="categoryFilter">
+            <option value="all">All</option>
+            <option value="car">Car</option>
+            <option value="bike">Bike</option>
+            <option value="cycle">Cycle</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="searchInput">Search listings</label>
+          <input type="search" id="searchInput" placeholder="Search model, brand or price" />
+        </div>
+        <div class="filter-group">
+          <label for="sortSelect">Sort by</label>
+          <select id="sortSelect">
+            <option value="featured">Featured</option>
+            <option value="priceLow">Price &#8593;</option>
+            <option value="priceHigh">Price &#8595;</option>
+            <option value="brand">Brand A–Z</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="catalog" id="catalog"></section>
+
+      <aside class="sidebar" id="cartPanel">
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <div class="cart-summary">
+          <p>Total: <strong id="cartTotal">$0</strong></p>
+          <button id="checkoutBtn" class="btn btn-success">Checkout</button>
+        </div>
+      </aside>
+
+      <section class="add-form-panel hidden" id="addFormPanel">
+        <h2>Add New Listing</h2>
+        <form id="addListingForm">
+          <div class="form-row">
+            <label for="itemCategory">Category</label>
+            <select id="itemCategory" required>
+              <option value="car">Car</option>
+              <option value="bike">Bike</option>
+              <option value="cycle">Cycle</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="itemTitle">Title</label>
+            <input type="text" id="itemTitle" placeholder="e.g. Honda Civic" required />
+          </div>
+          <div class="form-row">
+            <label for="itemBrand">Brand</label>
+            <input type="text" id="itemBrand" placeholder="e.g. Yamaha" required />
+          </div>
+          <div class="form-row">
+            <label for="itemPrice">Price ($)</label>
+            <input type="number" id="itemPrice" placeholder="e.g. 12000" min="1" required />
+          </div>
+          <div class="form-row">
+            <label for="itemDescription">Description</label>
+            <textarea id="itemDescription" rows="3" placeholder="Short description" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Add Listing</button>
+            <button type="button" id="cancelAddBtn" class="btn btn-secondary">Cancel</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Simple marketplace for cars, bikes and cycles built with HTML, CSS, and JavaScript.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

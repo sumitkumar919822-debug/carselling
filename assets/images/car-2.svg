@@ -1,0 +1,16 @@
+<svg width="800" height="520" viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="carBody2" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#5f27cd" offset="0%" />
+      <stop stop-color="#54a0ff" offset="100%" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" rx="48" fill="#f5f7ff" />
+  <path d="M100 310 H620 C650 310 690 280 700 240 L720 190 C730 170 720 150 700 140 H150 C130 150 120 170 130 190 L150 240 C160 270 190 310 220 310 Z" fill="url(#carBody2)" />
+  <rect x="170" y="210" width="230" height="85" rx="22" fill="#f8f8ff" opacity="0.9" />
+  <rect x="430" y="210" width="190" height="85" rx="22" fill="#f8f8ff" opacity="0.9" />
+  <circle cx="240" cy="345" r="52" fill="#34344a" opacity="0.2" />
+  <circle cx="560" cy="345" r="52" fill="#34344a" opacity="0.2" />
+  <circle cx="240" cy="345" r="30" fill="#1b1f3b" />
+  <circle cx="560" cy="345" r="30" fill="#1b1f3b" />
+</svg>
